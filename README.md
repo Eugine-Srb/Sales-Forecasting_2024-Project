@@ -68,7 +68,7 @@ project-root/
 3. **Power BI**
 
    * Open `.pbix` files in the `powerbi/` folder with Power BI Desktop (version ≥ 2.XX).
-   * View the live dashboard:** [Power BI Report]([https://app.powerbi.com/…](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9))  
+   * View the live dashboard:** [Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9) 
 
 4. **Data**
 
