@@ -6,13 +6,13 @@
 
 ## 📄 Project Overview
 
-I first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
+We first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
 
 1. **Data Preparation & Feature Engineering** (Notebooks `01_data_cleaning.ipynb`, `02_feature_engineering.ipynb`; with additional feature engineering steps in the modeling notebooks)
 2. **Model Training & Evaluation** (Notebooks `03_model_training.ipynb`, `04_holdout_2023_eval.ipynb`)
 3. **2024 Forecast Generation** (Notebook `05_forecast_2024.ipynb`)
 
-I incorporate **XGBoost** (non‑linear/promotion effects), **Prophet** (trend/seasonality), **SARIMA** (classical benchmark), and residual bias correction to produce final reconciled forecasts.
+We incorporate **XGBoost** (non‑linear/promotion effects), **Prophet** (trend/seasonality), **SARIMA** (classical benchmark), and residual bias correction to produce final reconciled forecasts.
 
 ---
 
@@ -42,6 +42,16 @@ project-root/
 
 ---
 
+## 📦 Datasets
+
+I used two source files:
+
+* **Company Data** (`data/raw/company_data.csv`): contained overall company revenue records. I performed initial imputation of missing (`NaN`) values here and compared its `Revenue` column against the product-level data—however, values did not align or correlate, so I did not use this dataset for final modeling.
+
+* **Product Sales** (`data/raw/product_sales.csv`): contains revenue by month and SKU. After cleaning and imputing missing values, I used it as the sole basis for feature engineering, model fitting, and forecasting.
+
+---
+
 ## ⚙️ Prerequisites & Setup
 
 1. **Clone the repo**
@@ -68,7 +78,7 @@ project-root/
 3. **Power BI**
 
    * Open `.pbix` files in the `powerbi/` folder with Power BI Desktop (version ≥ 2.XX).
-   * **View the live dashboard:** [Power BI Service Link](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9)
+   * **View the live dashboard:** [Your Power BI Service Link](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9)
 
 4. **Data**
 
@@ -97,11 +107,3 @@ This project is licensed under the **MIT License** – see [LICENSE](LICENSE) fo
 Data Scientist & Analyst
 
 Feel free to open issues or pull requests for suggestions, improvements, or bug fixes!
-
-
-Feel free to open issues or pull requests for suggestions, improvements, or bug fixes!
-
-
-
-
-(https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9)
