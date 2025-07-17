@@ -8,9 +8,9 @@
 
 I first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
 
-1. **Data Preparation & Feature Engineering** (Notebooks `01_data_cleaning.ipynb`, `02_feature_engineering.ipynb`; with additional feature engineering steps in the modeling notebooks)
-2. **Model Training & Evaluation** (Notebooks `03_model_training.ipynb`, `04_holdout_2023_eval.ipynb`)
-3. **2024 Forecast Generation** (Notebook `05_forecast_2024.ipynb`)
+1. **Data Preparation & Feature Engineering** (Notebooks `01_data_cleaning.ipynb`, `02_feature_engineering.ipynb`, `03-Compare_Revenue.ipynb`; with additional feature engineering steps in the modeling notebooks)
+2. **Model Training & Evaluation** (Notebooks `04-Prophet_Project2`, `SARIMA_Project2.ipynb`, `06-XGBoost_Project2.ipynb`)
+3. **2024 Forecast Generation** (Notebook `07-XGBoost_Project2_Forecast.ipynb`, `08-Hybrid_Forecasts.ipynb`)
 
 We incorporate **XGBoost** (non‑linear/promotion effects), **Prophet** (trend/seasonality), **SARIMA** (classical benchmark), and residual bias correction to produce final reconciled forecasts.
 
@@ -24,13 +24,16 @@ project-root/
 │   ├── raw/                # Original input files
 │   └── processed/          # Cleaned and engineered data
 ├── notebooks/              # Jupyter notebooks for each step
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   ├── 03_model_training.ipynb
-│   ├── 04_holdout_2023_eval.ipynb
-│   └── 05_forecast_2024.ipynb
+│   ├── 01-product_sales_processing.ipynb
+│   ├── 02-company_data_processing.ipynb
+│   ├── 03-Compare_Revenue.ipynb
+│   ├── 04-Prophet_Project2.ipynb
+    ├── 05-SARIMA_Project2.ipynb
+    ├── 06-XGBoost_Project2.ipynb
+    ├── 07-XGBoost_Project2_Forecast.ipynb
+│   └── 08-Hybrid_Forecasts.ipynb
 ├── models/                 # Serialized model files (e.g. .pkl, .joblib)
-├── powerbi/                # Power BI desktop files (.pbix) or exported assets
+├── powerbi/                # Power BI desktop files (.pbix) and exported assets
 ├── reports/                # Narrative deliverables (Markdown, PPTX, PDF)
 │   └── figures/            # PNG exports of Power BI visuals and charts
 ├── env/                    # Environment definitions (environment.yml / requirements.txt)
