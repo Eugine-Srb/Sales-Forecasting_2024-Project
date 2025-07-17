@@ -6,7 +6,7 @@
 
 ## 📄 Project Overview
 
-We first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
+I first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
 
 1. **Data Preparation & Feature Engineering** (Notebooks `01_data_cleaning.ipynb`, `02_feature_engineering.ipynb`; with additional feature engineering steps in the modeling notebooks)
 2. **Model Training & Evaluation** (Notebooks `03_model_training.ipynb`, `04_holdout_2023_eval.ipynb`)
