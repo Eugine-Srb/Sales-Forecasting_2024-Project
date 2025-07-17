@@ -1,0 +1,17 @@
+name: sales-forecasting-2024
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - prophet
+  - statsmodels
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - scipy
+  - pathlib
+  - itertools
