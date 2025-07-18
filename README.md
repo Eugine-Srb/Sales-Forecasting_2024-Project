@@ -34,7 +34,7 @@ project-root/
 │   └── 08-Hybrid_Forecasts.ipynb
 ├── models/                 # Serialized model files (e.g. .pkl, .joblib)
 ├── powerbi/                # Power BI desktop files (.pbix) and exported assets
-├── reports/                # Narrative deliverables (Markdown, PPTX, PDF)
+├── reports/                # Narrative deliverables (Markdown)
 │   └── figures/            # PNG exports of Power BI visuals and charts
 ├── env/                    # Environment definitions (environment.yml / requirements.txt)
 ├── .gitignore              # Git ignore rules
