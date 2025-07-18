@@ -1,18 +1,20 @@
-# Sales Forecasting 2024 Project
+# Sales_Forecasting_2024
+📈 2024 Monthly Revenue Forecast (Hybrid XGBoost + SARIMA + Prophet)
 
-*This repository contains code, data, and deliverables for forecasting monthly sales of multiple products in 2024 using a hybrid modeling approach.*
+**Goal:** Produce an accurate, low‑bias 2024 forecast for four SKUs (Alpha, Beta, Delta, Gamma) by combining machine‑learning and classical time‑series methods, and surface the results in a Power BI dashboard for planning and budgeting.
 
----
+**Why Hybrid?** Baseline XGBoost delivered the lowest hold‑out MAE but flattened seasonal amplitude. SARIMA and Prophet preserved seasonal shape but had higher error variance. I therefore use XGBoost for level + residual correction, and inject seasonal structure from SARIMA/Prophet, yielding realistic variability with strong accuracy.
 
-## 📄 Project Overview
+**Workflow Notebooks**
+1. **Data Preparation & Feature Engineering**  
+   `01_data_cleaning.ipynb` · `02_feature_engineering.ipynb` · `03_compare_revenue.ipynb`
+2. **Model Training & Evaluation**  
+   `04_prophet_project2.ipynb` · `05_sarima_project2.ipynb` · `06_xgboost_project2.ipynb`
+3. **Forecast Generation & Hybrid Assembly**  
+   `07_xgboost_forecast.ipynb` · `08_hybrid_forecasts.ipynb`
 
-I first built a base annual sales forecast for 2024, then—where that overall model performed well—generated product-level forecasts for four SKUs (Alpha, Beta, Delta, Gamma). Our hybrid pipeline blends classical and machine‑learning techniques to optimize accuracy through:
-
-1. **Data Preparation & Feature Engineering** (Notebooks `01_data_cleaning.ipynb`, `02_feature_engineering.ipynb`, `03-Compare_Revenue.ipynb`; with additional feature engineering steps in the modeling notebooks)
-2. **Model Training & Evaluation** (Notebooks `04-Prophet_Project2`, `SARIMA_Project2.ipynb`, `06-XGBoost_Project2.ipynb`)
-3. **2024 Forecast Generation** (Notebook `07-XGBoost_Project2_Forecast.ipynb`, `08-Hybrid_Forecasts.ipynb`)
-
-We incorporate **XGBoost** (non‑linear/promotion effects), **Prophet** (trend/seasonality), **SARIMA** (classical benchmark), and residual bias correction to produce final reconciled forecasts.
+**Methods Used:**  
+XGBoost (non‑linear / promotion effects) · Prophet (trend + multiple seasonalities) · SARIMA (classical benchmark) · Residual bias correction & reconciliation.
 
 ---
 
@@ -81,7 +83,7 @@ I used two source files:
 3. **Power BI**
 
    * Open `.pbix` files in the `powerbi/` folder with Power BI Desktop (version ≥ 2.XX).
-   * **View the live dashboard:** [Your Power BI Service Link](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9)
+   * **View the live dashboard:** [Power BI Service Link](https://app.powerbi.com/view?r=eyJrIjoiM2JlMGRkODAtNzg0MC00NzNiLTgzYmEtMTYxZDhlNDY1MzVkIiwidCI6IjQxOTI3ZjQyLTQ2NWMtNDFmOS1iYzAwLTUxMTVjM2QzNTE3NCIsImMiOjl9)
 
 4. **Data**
 
