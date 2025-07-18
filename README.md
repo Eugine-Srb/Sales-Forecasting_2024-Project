@@ -1,4 +1,4 @@
-# Sales Forecasting 2024 Project**
+# Sales Forecasting 2024 Project
 
 *This repository contains code, data, and deliverables for forecasting monthly sales of multiple products in 2024 using a hybrid modeling approach.*
 
