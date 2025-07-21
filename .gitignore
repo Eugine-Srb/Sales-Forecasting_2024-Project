@@ -18,6 +18,7 @@ env/
 # Data & model artifacts (if you don’t want binaries in Git)
 *.pbix
 data/processed/
++!/data/processed/*.csv
 models/
 
 # OS files
