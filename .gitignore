@@ -18,8 +18,10 @@ env/
 # Data & model artifacts (if you don’t want binaries in Git)
 *.pbix
 data/processed/
-+!/data/processed/*.csv
 models/
+
+# But allow CSVs inside data/processed
+!/data/processed/*.csv
 
 # OS files
 .DS_Store
