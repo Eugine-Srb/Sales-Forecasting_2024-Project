@@ -15,7 +15,6 @@ env/
 .vscode/
 .idea/
 
-
 # OS files
 .DS_Store
 Thumbs.db
@@ -23,3 +22,8 @@ Thumbs.db
 # Logs and temp files
 *.log
 *.tmp
+
+# Data & model artifacts (if you don’t want binaries in Git)
+*.pbix
+data/processed/
+models/
