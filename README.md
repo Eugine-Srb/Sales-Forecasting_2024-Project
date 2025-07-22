@@ -26,14 +26,14 @@ project-root/
 │   ├── raw/                # Original input files
 │   └── processed/          # Cleaned and engineered data
 ├── notebooks/              # Jupyter notebooks for each step
-│   ├── 01-product_sales_processing.ipynb
-│   ├── 02-company_data_processing.ipynb
-│   ├── 03-Compare_Revenue.ipynb
-│   ├── 04-Prophet_Project2.ipynb
-    ├── 05-SARIMA_Project2.ipynb
-    ├── 06-XGBoost_Project2.ipynb
-    ├── 07-XGBoost_Project2_Forecast.ipynb
-│   └── 08-Hybrid_Forecasts.ipynb
+│   ├── 01_product_sales_processing.ipynb
+│   ├── 02_company_data_processing.ipynb
+│   ├── 03_compare_revenue.ipynb
+│   ├── 04_prophet.ipynb
+    ├── 05_sarima.ipynb
+    ├── 06_xgb_baseline.ipynb
+    ├── 07_xgb_diagnostic.ipynb
+│   └── 08_hybrid_forecasts.ipynb
 ├── models/                 # Serialized model files (e.g. .pkl, .joblib)
 ├── powerbi/                # Power BI desktop files (.pbix) and exported assets
 ├── reports/                # Narrative deliverables (Markdown)
